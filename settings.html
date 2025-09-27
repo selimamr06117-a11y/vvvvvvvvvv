@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الإعدادات - AI HomeWork Answers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>⚙️ إعدادات الموقع</h1>
+
+  <h3>🌓 الثيمات الجاهزة</h3>
+  <select id="themeSelect" onchange="applyTheme()">
+    <option value="">🎨 اختر ثيم</option>
+    <option value="light">☀️ فاتح</option>
+    <option value="dark">🌙 داكن</option>
+    <option value="colorful">🌈 ملون</option>
+    <option value="blue">💙 أزرق</option>
+  </select>
+
+  <h3>✨ اصنع ثيمك الخاص</h3>
+  <button onclick="openThemeCreator()">🎨 إنشاء ثيم جديد</button>
+  <div id="themeCreator" style="display:none;">
+    <label>لون الخلفية:</label> <input type="color" id="bgColor"><br>
+    <label>لون النصوص:</label> <input type="color" id="textColor"><br>
+    <label>الخط:</label> 
+    <select id="fontFamily">
+      <option value="Arial">Arial</option>
+      <option value="Cairo">Cairo</option>
+      <option value="Amiri">Amiri</option>
+      <option value="Tahoma">Tahoma</option>
+    </select><br>
+    <label>اسم الثيم:</label> <input type="text" id="themeName"><br>
+    <button onclick="saveCustomTheme()">💾 حفظ</button>
+    <button onclick="closeThemeCreator()">❌ إلغاء</button>
+  </div>
+
+  <h3>📝 إعدادات النصوص</h3>
+  <button onclick="changeFontSize('increase')">➕ تكبير</button>
+  <button onclick="changeFontSize('decrease')">➖ تصغير</button>
+  <button onclick="changeFontSize('reset')">🔄 إعادة</button>
+  <button id="bigTextToggle" onclick="toggleBigText()">🔎 وضع القراءة المكبرة</button>
+
+  <br><br>
+  <a href="homework.html">⬅️ العودة</a>
+</body>
+</html>

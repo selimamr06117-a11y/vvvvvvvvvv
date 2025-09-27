@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دفتر الواجبات - AI HomeWork Answers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>📓 دفتر الواجبات</h1>
+  <input type="text" id="notebookName" placeholder="اسم الدفتر" oninput="saveNotebookName()">
+  <h3>📑 الأسئلة المحفوظة:</h3>
+  <ul id="notebook"></ul>
+  <br>
+  <button onclick="downloadPDF()">📥 حفظ كملف PDF</button>
+  <button onclick="shareWhatsApp()">📤 مشاركة واتساب</button>
+  <button onclick="shareEmail()">📧 مشاركة إيميل</button>
+  <br><br>
+  <a href="homework.html">⬅️ العودة لحل الواجب</a>
+</body>
+</html>

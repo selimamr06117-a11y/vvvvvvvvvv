@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حل الواجبات - AI HomeWork Answers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>📘 AI HomeWork Answers</h1>
+  <h2>✏️ حل الواجب</h2>
+  <form onsubmit="return solveHomework()">
+    <label>اختر المادة:</label>
+    <select id="subject" required>
+      <option value="math">رياضيات</option>
+      <option value="science">علوم</option>
+      <option value="english">إنجليزي</option>
+      <option value="arabic">عربي</option>
+    </select><br><br>
+
+    <label>اكتب السؤال:</label><br>
+    <textarea id="question" rows="4" cols="50" required></textarea><br><br>
+    <button type="submit">📩 إرسال</button>
+  </form>
+
+  <h3>✅ الحل:</h3>
+  <div id="answer"></div>
+  <br>
+  <button onclick="speakAnswer('male')">🔊 استمع (صوت رجالي)</button>
+  <button onclick="speakAnswer('female')">🔊 استمع (صوت نسائي)</button>
+  <br><br>
+  <a href="notebook.html">📓 دفتر الواجبات</a> | 
+  <a href="settings.html">⚙️ الإعدادات</a>
+</body>
+</html>
